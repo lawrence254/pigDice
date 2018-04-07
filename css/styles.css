@@ -1,3 +1,32 @@
+
 #rollDie2{
   display: none;
+}
+.screen{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100vw;
+  height: 70vh;
+}
+.playRight{
+  height: 100%;
+  background: blue;
+}
+.playLeft{
+  height: 100%;
+  background: orange;
+}
+#player1Score{
+  padding-top: 15%;
+  padding-left: 15%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#player2Score{
+  padding-top: 15%;
+  padding-left: 15%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
 }

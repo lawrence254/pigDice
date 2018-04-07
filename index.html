@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <div class="container">
-      <form id="rollDice" class="form-inline">
-        <div class="form-group">
-          <label for="">Player 1</label>
-          <input type="text" name="" id="player1" class="form-control" value="">
-        </div>
-        <div class="form-group">
-          <label for="">Player 2</label>
-          <input type="text" name="" id="player2" class="form-control" value="">
-        </div>
-        <button type="submit" id="submit" class="btn btn-success" name="button">Register</button>
-      </form>
 
-      <div class="row">
-        <div class="col-sm-4">
-          <button type="submit" class="btn btn-danger" id="rollDie1">Roll Player 1</button>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container-flex">
+    <form id="rollDice" class="form-inline">
+      <div class="form-group">
+        <label for="">Player 1</label>
+        <input type="text" name="" id="player1" class="form-control" value="">
+      </div>
+      <div class="form-group">
+        <label for="">Player 2</label>
+        <input type="text" name="" id="player2" class="form-control" value="">
+      </div>
+      <button type="submit" id="submit" class="btn btn-success" name="button">Register</button>
+    </form>
+    <div class="container-flex">
+      <div class="row screen">
+        <div class="col-sm-6 playRight">
+          <div class="pl1">
+            <div id="player1Score"></div>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <button type="submit" class="btn btn-info" id="hold">Hold!</button>
-        </div>
-        <div class="col-sm-4">
-          <button type="submit" class="btn btn-danger" id="rollDie2">Roll Player 2</button>
+        <div class="col-sm-6 playLeft">
+          <div class="pl2">
+            <div id="player2Score"></div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <button type="submit" class="btn btn-danger" id="rollDie1">Roll Player 1</button>
+      </div>
+      <div class="col-sm-4">
+        <button type="submit" class="btn btn-info" id="hold">Hold!</button>
+      </div>
+      <div class="col-sm-4">
+        <button type="submit" class="btn btn-danger" id="rollDie2">Roll Player 2</button>
+      </div>
+    </div>
+  </div>
 
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>
