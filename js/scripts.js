@@ -9,7 +9,7 @@ Player.prototype.roll = function(roll) {
   return this.total;
 }
 function gameOver(player){
-  alert("Game Over!"+player);
+  alert("Game Over! "+ player +" Wins!!!!!");
 }
 $(document).ready(function() {
   var rollCount = [];
@@ -23,7 +23,7 @@ $(document).ready(function() {
     var p2= $('input#player2').val()
 
     player1 = new Player(p1);
-    player2 = new Player(p2);
+     player2 = new Player(p2);
 
     console.log("Player 1 is: "+player1.name+" And Player 2 is: "+player2.name);
   });
@@ -33,7 +33,7 @@ $(document).ready(function() {
     if (rollNumber === 1) {
       // alert("Sorry...You rolled a one my niggah....try your luck next time");
       player1.roll(0);
-      $('#player1Score').empty();
+      $('#player1Score').empty()
       $('#player1Score').append("You rolled a 1: "+player1.total);
       $('#rollDie2').toggle();
       $('#rollDie1').toggle();
@@ -41,7 +41,7 @@ $(document).ready(function() {
       rollCount.push(rollNumber);
       player1.roll(rollNumber);
       if (player1.total >= 100) {
-        var player = player.name;
+        var player = player1.name;
         gameOver(player);
       }
       $('#player1Score').empty();
@@ -55,19 +55,15 @@ $(document).ready(function() {
     event.preventDefault();
     var rollNumber = Math.floor(Math.random() * 6) + 1;
     if (rollNumber === 1) {
-      // alert("Sorry...You rolled a one my niggah....try your luck next time");
-
+      alert("Sorry...You rolled a one my niggah....try your luck next time");
       player2.roll(0);
-      $('#player2Score').empty();
-      $('#player2Score').append("You rolled a 1: "+player2.total);
       $('#rollDie2').toggle();
-      $('#player1Score').empty();
       $('#rollDie1').toggle();
     }else {
       rollCount.push(rollNumber);
       player2.roll(rollNumber);
       if (player1.total >= 100) {
-        var player = player.name;
+        var player = player2.name;
         gameOver(player);
       }
       $('#player2Score').empty();
