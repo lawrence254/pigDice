@@ -10,7 +10,9 @@
 
 <body>
   <div class="container-flex">
-    following are the rules of the game:
+    <div class="herader">Welcome To PigDice</div>
+    <div class="gameRules">
+    The following are the rules of the game:
     <ul>
       <li>You must first Enter Both players names before you play</li>
       <li>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</li>
@@ -24,7 +26,7 @@
       </ul>
       The first player to get 100 points or above wins the game.
     </ul>
-
+</div>
     <form id="rollDice" class="form-inline">
       <div class="form-group">
         <label for="">Player 1</label>
@@ -40,12 +42,13 @@
       <div class="row screen">
         <div class="col-sm-6 playRight">
           <div class="pl1">
+            <div id="roll1Total"></div>
             <div id="player1Score"></div>
           </div>
         </div>
         <div class="col-sm-6 playLeft">
           <div class="pl2">
-            <div id="rollTotal"></div>
+            <div id="roll2Total"></div>
             <div id="player2Score"></div>
           </div>
         </div>
@@ -63,6 +66,14 @@
       </div>
       <div id="play1score"></div>
       <div id="play2score"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div id="player1Final"></div>
+      </div>
+      <div class="col-sm-6">
+        <div id="player2Final"></div>
+      </div>
     </div>
   </div>
 
