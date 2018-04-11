@@ -6,7 +6,7 @@
   margin-top: 2%;
   margin-bottom: 2%;
   width: 100vw;
-  height: 70vh;
+  height: 50vh;
 }
 .playRight{
   height: 100%;
@@ -54,10 +54,18 @@
   margin-top: 1%;
 }
 #player1Final{
-  font-size: 1.5em;
+  margin-top: 5%;
+  margin-left: 23%;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
 }
 #player2Final{
-  font-size: 1.5em;
+  margin-top: 5%;
+  margin-left: 23%;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
 }
 form{
   margin-top: 2%;

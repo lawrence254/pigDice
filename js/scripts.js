@@ -67,7 +67,7 @@ $(document).ready(function() {
       player1.hold();
       $('#player1Score').empty();
       $('#player1Final').empty();
-      $('#player1Final').append("Score for "+player1.name+"is: " + player1.total);
+      $('#player1Final').append("Score for "+player1.name+" is: " + player1.total);
       $(".roll1Total").empty();
       $('#rollDie2').toggle();
       $('#rollDie1').toggle();
@@ -76,7 +76,7 @@ $(document).ready(function() {
       player2.hold();
       $('#player2Score').empty();
       $('#player2Final').empty();
-      $('#player2Final').append("Score for "+player2.name+"is: " + player2.total);
+      $('#player2Final').append("Score for "+player2.name+" is: " + player2.total);
       $(".roll1Total").empty();
       $('#rollDie2').toggle();
       $('#rollDie1').toggle();
