@@ -20,7 +20,7 @@ The following are the specifications for this application:
 #### INPUT TYPE
   * The application has a html5 input validation for text, it also requires you to enter text into the text boxes before you can proceed with playing the game.
 
-#### following are the rules of the game:
+#### The following are the rules of the game:
   * Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
   * If the player rolls a 1, they score nothing and it becomes the next player's turn.
   * If the player rolls any other number, it is added to their turn total and the player's turn continues.
