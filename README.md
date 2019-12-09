@@ -12,6 +12,9 @@ When all the Requirements have been met, you can simply clone the application by
 ## Known Bugs/Updates/Corrections
 The application currently doesn't have any bugs. If any are spotted you can open an issue by clicking on this [link](https://github.com/lawrence254/pigDice/issues) and selecting `New Issue` on the resulting page and I will look into it.
 
+## CodeBeat Grade
+[![codebeat badge](https://codebeat.co/badges/0fd0c634-51b7-4539-9321-ca670336b10c)](https://codebeat.co/projects/github-com-lawrence254-pigdice-master)
+
 ## Specifications
 The following are the specifications for this application:
 #### INPUT
